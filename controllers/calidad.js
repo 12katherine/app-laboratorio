@@ -7,7 +7,7 @@ const listadoPut=async(req,res)=>{
     const listado = await Calidad.findByIdAndUpdate(id,{listadoMuestras,InformeResultado,RecepcionMuestras,OrdenServicio,InstructivoTomaMuestras,Seguimiento,OfertaServicios})
     await listado.save()
     const idUsuario=req.usuario._id
-    const idPut=id 
+    const idPut=id   
     // const navegador=req.headers['user-agent']
     const ip=req.socket.remoteAddress
     const log=new Log({idUsuario,idPut,ip})
