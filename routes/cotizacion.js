@@ -127,7 +127,14 @@ router.put('/desactivar/:id', [
     check('id').isMongoId(),
     check('id').custom(HerlpersCotizacion.existeCotizacionById),
     validarCampos
-], desactivarPut)  
+], desactivarPut) 
+
+// router.put('/activar2/:id', [
+//     validarJWT,
+//     check('id').isMongoId(),
+//     check('id').custom(HerlpersCotizacion.existeCotizacionById),
+//     validarCampos
+// ], activarPutRespu)
 
 router.get('/cotisestaenProceso',listarTodasCotizacionesEnProceso)
 

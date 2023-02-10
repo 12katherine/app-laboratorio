@@ -369,6 +369,22 @@ const listarTodasCotizacionesEnProceso=async(req, res)=>{
 }
 
 
+// const activarPutRespu=async(req, res)=>{
+//     const {id}=req.params;
+//     const activar=await Cotizacion.findByIdAndUpdate(id,{estado:1,motivo:""}) 
+//     const idUsuario=req.usuario._id
+//     const idPut= id
+//     const texto=`El usuario: ${req.usuario.nombre} ha activado una cotización`
+//     const ip=req.socket.remoteAddress
+//     const log=new Log({idUsuario,idPut,texto,ip})
+//     await log.save()
+
+//     res.json({
+//         "msg":"La cotización esta en estado confirmado"
+//     })
+// }
+
+
 
 
 
